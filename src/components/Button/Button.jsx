@@ -1,4 +1,3 @@
-// src/components/Button/Button.jsx
 
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -6,16 +5,12 @@ function cn(...classes) {
 
 const variants = {
   primary:
-    // negro por defecto, un poco más oscuro al hover
     "bg-gray-900 text-white hover:bg-gray-950 focus-visible:ring-gray-900",
   secondary:
-    // blanco por defecto; en hover se vuelve negro
     "border border-gray-300 bg-white hover:bg-gray-900 hover:text-white hover:border-gray-900 focus-visible:ring-gray-900",
   ghost:
-    // transparente por defecto; en hover se vuelve negro
     "bg-transparent hover:bg-gray-900 hover:text-white focus-visible:ring-gray-900",
   link:
-    // link visual (no cambia a negro); si quieres que también se ponga negro, dímelo
     "bg-transparent text-blue-600 hover:underline px-0 py-0 focus-visible:ring-blue-500",
 };
 
@@ -45,7 +40,6 @@ function Button({
         // base
         "inline-flex items-center justify-center gap-2 rounded-xl font-medium",
         "transition-colors duration-200 focus:outline-none",
-        // animación de tamaño al hover
         "transition-transform duration-200 ease-out hover:scale-105 active:scale-100",
         "focus-visible:ring-2 disabled:opacity-50 disabled:pointer-events-none",
         sizes[size],
